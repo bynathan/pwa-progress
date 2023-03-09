@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.332" height="50.504" viewBox="0 0 64.332 50.504">
+  <g id="cloud" transform="translate(0 -55.032)">
+    <g id="Grupo_405" data-name="Grupo 405" transform="translate(0 55.032)">
+      <g id="Grupo_404" data-name="Grupo 404" transform="translate(0 0)">
+        <path id="Caminho_700" data-name="Caminho 700" d="M53.6,71.766a22.112,22.112,0,0,0-43.5,3.779,12.061,12.061,0,0,0,2.01,23.961H22.161v-4.02H12.11a8.041,8.041,0,1,1,0-16.081,2.01,2.01,0,0,0,2.01-2.01,18.091,18.091,0,0,1,35.841-3.518,2.01,2.01,0,0,0,1.709,1.608,10.051,10.051,0,0,1-1.367,20H42.263v4.02H50.3a14.071,14.071,0,0,0,3.3-27.74Z" transform="translate(0 -55.032)" fill="#aed9ce"/>
+        <path id="Caminho_701" data-name="Caminho 701" d="M189.076,249.6l-8.041,8.041,2.834,2.834,4.623-4.6v19.277h4.02V255.867l4.6,4.6,2.834-2.834L191.91,249.6A2.01,2.01,0,0,0,189.076,249.6Z" transform="translate(-158.291 -224.641)" fill="#aed9ce"/>
+      </g>
+    </g>
+  </g>
+</svg>
