@@ -1,0 +1,101 @@
+.swiper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto 90px auto;
+  &__carousel {
+    position: relative;
+    .carousel-indicators {
+      height: 22px;
+      top: 100% !important;
+      margin: 0;
+      button {
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #d5d5d5;
+        opacity: 100%;
+        transition: background 0.2s;
+        &.active {
+          background-color: #0aa77c;
+        }
+        &:hover {
+          background-color: #0aa77c;
+        }
+      }
+    }
+    .carousel-inner {
+      .item {
+        display: none;
+        margin: 0 9px 0 0;
+        &.active {
+          display: flex;
+        }
+        img {
+          height: 200px;
+          width: 378px !important;
+          border-radius: 16px;
+        }
+      }
+    }
+    .carousel-control-prev {
+      position: absolute;
+      left: -25px;
+      &:hover {
+        .icon-next {
+          background-image: url("../../../../../assets/imgs/home/rightArrowHover.png") !important;
+        }
+      }
+    }
+    .carousel-control-next {
+      position: absolute;
+      right: -25px;
+      &:hover {
+        .icon-next {
+          background-image: url("../../../../../assets/imgs/home/leftArrowHover.png") !important;
+        }
+      }
+    }
+    .carousel-control {
+      opacity: 100%;
+      height: 50px;
+      width: 50px;
+      margin: auto 0;
+      border-radius: 50%;
+      &:hover {
+        span:nth-child(1) {
+          background-color: #0aa77c;
+        }
+      }
+      span:nth-child(1) {
+        height: 50px;
+        width: 50px;
+        background: #ffffff;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        transition: background 0.2s;
+      }
+      .icon-next {
+        background-image: url("../../../../../assets/imgs/home/rightArrow.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: background 0.2s;
+        &:hover {
+          background-image: url("../../../../../assets/imgs/home/rightArrowHover.png") !important;
+        }
+      }
+      .icon-prev {
+        left: unset;
+        background-image: url("../../../../../assets/imgs/home/leftArrow.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: background 0.2s;
+        &:hover {
+          background-image: url("../../../../../assets/imgs/home/leftArrowHover.png") !important;
+        }
+      }
+    }
+  }
+}

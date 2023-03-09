@@ -1,0 +1,237 @@
+.content {
+  display: flex;
+  flex-direction: column;
+  height: unset;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 auto 100px auto;
+  font-family: "Inter", sans-serif;
+  &__type {
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    .content__header{
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: start;
+      margin: 5px 0 32px 0;
+      svg{
+        height: 24px !important;
+        width: 24px !important;
+      }
+      h1 {
+        font-style: normal;
+        font-weight: 800;
+        font-size: 24px;
+        line-height: 29px;
+        color: #292f31;
+        height: unset;
+        margin: 0px;
+        width: unset;
+      }
+      a{
+        width: unset;
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        margin: 0 0 0 64px;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: #05CB95;
+        transition: color .2s;
+        svg{
+          stroke: #05CB95;
+          transition: stroke .2s;
+        }
+        &:hover{
+          color: #0AA77C;
+          svg{
+            stroke: #0AA77C;
+          }
+        }
+      }
+    }
+    &__group {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      margin: 0 0 72px 0;
+    }
+    &__logist {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      height: unset;
+      width: unset;
+      cursor: pointer;
+      margin: 0 !important;
+      transition: transform 0.2s;
+      &:hover {
+        transform: scale(1.05);
+      }
+      &:nth-child(3) {
+        p:nth-child(4) {
+          color: #575757 !important;
+        }
+      }
+      div {
+        height: 140px;
+        width: 279px;
+        border-radius: 24px;
+        padding: 14px 14px 18px 14px;
+        background: #fff;
+        background-image: url("../../../../../assets/imgs/home/bgdefault.png");
+        background-repeat: no-repeat;
+        div {
+          &:nth-child(1) {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 70px;
+            width: 70px;
+            border-radius: 50%;
+            background: #fff;
+            padding: 0px;
+            margin: 0 0 14px 0;
+            img {
+              height: 40px;
+              width: 40px;
+            }
+          }
+          &:nth-child(2) {
+            display: flex;
+            align-items: center;
+            text-align: center;
+            height: 25px;
+            width: 70px;
+            background: #0aa77c;
+            border-radius: 6px;
+            padding: 0;
+            &:hover {
+              outline: unset;
+            }
+            p {
+              font-style: normal;
+              font-weight: 800;
+              font-size: 12px;
+              line-height: 15px;
+              color: #ffffff;
+              margin: 0px;
+            }
+          }
+        }
+      }
+      h1 {
+        height: unset;
+        font-style: normal;
+        font-weight: 800;
+        font-size: 16px;
+        line-height: 19px;
+        color: #292f31;
+        margin: 9px 0 2px 0;
+      }
+      h2 {
+        height: unset;
+        font-style: normal;
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 16px;
+        color: #292f31;
+        margin: 0 0 2px 0;
+      }
+      p {
+        height: unset;
+        font-style: normal;
+        font-weight: 600;
+        font-size: 13px;
+        line-height: 16px;
+        color: #0aa77c;
+      }
+    }
+  }
+  .itens__carousel{
+    position: unset !important;
+    .carousel{
+      position: unset !important;
+    }
+    .carousel-indicators{
+      display: none !important;
+    }
+    .carousel-inner{
+      position: unset !important;
+      .item{
+        display: none !important;
+        margin: 0 9px 0 0 !important;
+        &.active{
+          display: flex !important;
+        }
+      }
+    }
+    .carousel-control-prev{
+      position: absolute !important;
+      top: 0px !important;
+      bottom: unset !important;
+      right: 66px !important;
+      left: unset !important;
+      &:hover{
+        .icon-next{
+          background-image: url("../../../../../assets/imgs/home/rightArrowHover.png") !important;
+        }
+      }
+    }
+    .carousel-control-next{
+      position: absolute !important;
+      top: 0px !important;
+      bottom: unset !important;
+      right: 0px !important;
+      left: unset !important;
+      &:hover{
+        .icon-next{
+          background-image: url("../../../../../assets/imgs/home/leftArrowHover.png") !important;
+        }
+      }
+    }
+    .carousel-control{
+      opacity: 100% !important;
+      height: 50px !important;
+      width: 50px !important;
+      border-radius: 50% !important;
+      &:hover{
+        span:nth-child(1){
+          background-color: #0AA77C !important;
+        }
+      }
+      span:nth-child(1){
+        height: 50px !important;
+        width: 50px !important;
+        background: #FFFFFF !important;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15) !important;
+        border-radius: 50% !important;
+        transition: background 0.2s !important;
+      }
+      .icon-next{
+        background-image: url("../../../../../assets/imgs/home/rightArrow.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: background .2s !important;
+        &:hover{
+          background-image: url("../../../../../assets/imgs/home/rightArrowHover.png") !important;
+        }
+      }
+      .icon-prev{
+        left: unset !important;
+        background-image: url("../../../../../assets/imgs/home/leftArrow.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: background .2s !important;
+        &:hover{
+          background-image: url("../../../../../assets/imgs/home/leftArrowHover.png") !important;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,127 @@
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  height: unset;
+  padding: 64px 15px 30px 15px;
+  background: #f8fafb;
+  font-family: "Roboto", sans-serif;
+  img {
+    height: 68px;
+    width: 200px;
+    margin: 0 0 36px 0;
+    cursor: pointer;
+  }
+  &__nav {
+    display: flex;
+    align-items: start;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 648px;
+    &__options {
+      display: flex;
+      flex-direction: column;
+      align-items: start;
+      width: unset;
+      height: unset;
+      h1 {
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+        color: #292f31;
+        margin: 0 0 20px 0;
+      }
+      ul {
+        list-style: none;
+        padding: 0px;
+        li {
+          cursor: pointer;
+          font-style: normal;
+          font-weight: 400;
+          font-size: 16px;
+          line-height: 19px;
+          color: #575757;
+          transition: color 0.2s;
+          &:hover {
+            color: #05cb95;
+          }
+          &:first-child {
+            margin: 0 0 16px 0;
+          }
+          &:last-child {
+            margin: 16px 0 0 0;
+          }
+        }
+      }
+    }
+    &__social {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      width: 81px;
+      a {
+        text-decoration: none;
+        width: unset;
+        height: unset;
+        &:hover svg {
+          fill: #05cb95;
+          transform: scale(1.1);
+        }
+      }
+      svg {
+        cursor: pointer;
+        fill: #292f31;
+        display: flex;
+        transition: fill 0.2s, transform 0.2s;
+        &:nth-child(1) {
+          height: 19.97px;
+          width: 19.97px;
+        }
+        &:nth-child(2) {
+          height: 16.5px;
+          width: 20.31px;
+        }
+        &:nth-child(3) {
+          height: 22.87px;
+          width: 12.36px;
+        }
+      }
+    }
+  }
+  h2 {
+    width: unset;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #949494;
+    text-align: center;
+    margin: 84px auto 0 auto;
+  }
+}
+
+@media (max-width: 475px) {
+  .footer {
+    &__nav {
+      flex-direction: column;
+      align-items: center;
+      &__options {
+        text-align: center;
+        &:first-child {
+          margin: 0 0 32px 0;
+        }
+        &:last-child {
+          margin: 32px 0 0 0;
+        }
+        ul {
+          text-align: center;
+          li {
+            height: unset;
+          }
+        }
+      }
+    }
+  }
+}

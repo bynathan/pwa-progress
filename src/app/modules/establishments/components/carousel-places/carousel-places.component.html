@@ -1,0 +1,53 @@
+<!-- Ajuste de CSS para fazer @bynathan -->
+<div class="content">
+  <div class="content__type">
+    <div class="content__header">
+      <h1>{{ title }}</h1>
+      <a href="">
+        todos
+        <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+          <path d="M8.91016 20.6974L15.4302 14.1774C16.2002 13.4074 16.2002 12.1474 15.4302 11.3774L8.91016 4.85742" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+      </a>
+    </div>
+    <div class="content__type__group">
+      <carousel
+        class="itens__carousel"
+        [itemsPerSlide]="itemsPerSlideItens"
+        [singleSlideOffset]="singleSlideOffsetItens"
+        [noWrap]="!noWrapItens"
+        [interval]="0"
+        [startFromIndex]="0"
+      >
+        <slide class="itens__carousel__slider" *ngFor="let place of places">
+          <div
+            class="content__type__logist"
+            [routerLink]="['details', place.id]"
+          >
+            <div>
+              <div>
+                <img
+                  [src]="place.imgUrl || 'assets/imgs/products/no-picture.png'"
+                  alt="Logo do estabelecimento"
+                />
+              </div>
+              <div *ngIf="!place.opened">
+                <p>fechado</p>
+              </div>
+            </div>
+            <h1>{{ place.name }}</h1>
+            <h2>{{ place.kitchenType }}</h2>
+            <p [style]="place.shippingCost > 0 ? deliveryNotFree : ''">
+              {{ place.deliveryTime }} minutos |
+              {{
+                place.shippingCost === 0
+                  ? "entrega grátis"
+                  : "R$ " + place.shippingCost.toLocaleString()
+              }}
+            </p>
+          </div>
+        </slide>
+      </carousel>
+    </div>
+  </div>
+</div>

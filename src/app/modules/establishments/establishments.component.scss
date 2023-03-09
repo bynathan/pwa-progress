@@ -1,0 +1,97 @@
+.home__container--full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.types {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  font-family: "Inter", sans-serif;
+  margin: 167px 0 77px 0;
+  &__options {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 25px 20px;
+    border-radius: 24px;
+    height: 112px;
+    width: 279px;
+    background-color: #fff;
+    opacity: 90%;
+    transition: opacity 0.2s;
+    cursor: pointer;
+    &:nth-child(1) {
+      background-image: url("../../../assets/imgs/home/capamercado.png");
+    }
+    &:nth-child(2) {
+      background-image: url("../../../assets/imgs/home/caparestaurantes.png");
+    }
+    &:nth-child(3) {
+      background-image: url("../../../assets/imgs/home/capapetshops.png");
+    }
+    &:nth-child(4) {
+      background-image: url("../../../assets/imgs/home/capabebidas.png");
+    }
+    &:hover {
+      opacity: 100%;
+      div {
+        background: #05cb95;
+        svg {
+          fill: #fff;
+          transform: rotate(0deg);
+        }
+      }
+      p {
+        color: #05cb95;
+      }
+    }
+    div {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 62px;
+      width: 62px;
+      background: #fff;
+      border-radius: 50%;
+      transition: background 0.2s;
+      svg {
+        height: 32px;
+        width: 31px;
+        fill: #292f31;
+        transition: fill 0.2s, transform 0.3s;
+        transform: rotate(360deg);
+      }
+    }
+    p {
+      height: unset;
+      width: unset;
+      margin: 0 0 0 16px;
+      font-style: normal;
+      font-weight: 500;
+      font-size: 18px;
+      line-height: 22px;
+      color: #ffffff;
+      transition: color 0.2s;
+    }
+  }
+}
+
+.backToTop{
+  height: 55px;
+  width: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #292F31;
+  border-radius: 50%;
+  cursor: pointer;
+  position: fixed;
+  right: 20px;
+  bottom: 20px;
+}
