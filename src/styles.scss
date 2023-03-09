@@ -1,0 +1,205 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  width: 100%;
+}
+
+.container__full {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+// Carousel styles
+.swiper{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 1170px;
+  margin: 0 0 90px 0;
+  &__carousel{
+    position: relative;
+    .carousel-indicators{
+      height: 22px;
+      top: 100% !important;
+      margin: 0;
+      button{
+        height: 8px;
+        width: 8px;
+        border-radius: 50%;
+        background-color: #D5D5D5;
+        opacity: 100%;
+        transition: background .2s;
+        &.active{
+          background-color: #0AA77C;
+        }
+        &:hover{
+          background-color: #0AA77C;
+        }
+      }
+    }
+    .carousel-inner{
+      overflow: visible;
+      .item{
+        display: none;
+        margin: 0 9px 0 0;
+        &.active{
+          display: flex;
+        }
+        img{
+          height: 200px;
+          width: 378px !important;
+          border-radius: 16px;
+        }
+      }
+    }
+    .carousel-control-prev{
+      position: absolute;
+      left: -25px;
+      &:hover{
+        .icon-next{
+          background-image: url("../src/assets/imgs/home/rightArrowHover.png") !important;
+        }
+      }
+    }
+    .carousel-control-next{
+      position: absolute;
+      right: -25px;
+      &:hover{
+        .icon-next{
+          background-image: url("../src/assets/imgs/home/leftArrowHover.png") !important;
+        }
+      }
+    }
+    .carousel-control{
+      opacity: 100%;
+      height: 50px;
+      width: 50px;
+      margin: auto 0;
+      border-radius: 50%;
+      &:hover{
+        span:nth-child(1){
+          background-color: #0AA77C;
+        }
+      }
+      span:nth-child(1){
+        height: 50px;
+        width: 50px;
+        background: #FFFFFF;
+        box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15);
+        border-radius: 50%;
+        transition: background 0.2s;
+      }
+      .icon-next{
+        background-image: url("../src/assets/imgs/home/rightArrow.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: background .2s;
+        &:hover{
+          background-image: url("../src/assets/imgs/home/rightArrowHover.png") !important;
+        }
+      }
+      .icon-prev{
+        left: unset;
+        background-image: url("../src/assets/imgs/home/leftArrow.png") !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        transition: background .2s;
+        &:hover{
+          background-image: url("../src/assets/imgs/home/leftArrowHover.png") !important;
+        }
+      }
+    }
+  }
+}
+
+.content {
+  .itens__carousel{
+    position: unset !important;
+    .carousel{
+      position: unset !important;
+      .carousel-indicators{
+        display: none !important;
+      }
+      .carousel-inner{
+        overflow: visible;
+        position: unset !important;
+        .item{
+          display: none !important;
+          margin: 0 9px 0 0 !important;
+          &.active{
+            display: flex !important;
+          }
+        }
+      }
+      .carousel-control{
+        opacity: 100% !important;
+        height: 50px !important;
+        width: 50px !important;
+        border-radius: 50% !important;
+        &:hover{
+          span:nth-child(1){
+            background-color: #0AA77C !important;
+          }
+        }
+        span:nth-child(1){
+          height: 50px !important;
+          width: 50px !important;
+          background: #FFFFFF !important;
+          box-shadow: 0px 0px 25px rgba(0, 0, 0, 0.15) !important;
+          border-radius: 50% !important;
+          transition: background 0.2s !important;
+        }
+      }
+      .carousel-control-prev{
+        position: absolute !important;
+        top: 0px !important;
+        bottom: unset !important;
+        right: 66px !important;
+        left: unset !important;
+        span:nth-child(1){
+          background-image: url("../src/assets/imgs/home/leftArrow.png") !important;
+          background-repeat: no-repeat !important;
+          background-position: center !important;
+          transition: background .2s !important;
+        }
+        &:hover{
+          span:nth-child(1){
+            background-image: url("../src/assets/imgs/home/leftArrowHover.png") !important;
+          }
+        }
+      }
+      .carousel-control-next{
+        position: absolute !important;
+        top: 0px !important;
+        bottom: unset !important;
+        right: 0px !important;
+        left: unset !important;
+        span:nth-child(1){
+          background-image: url("../src/assets/imgs/home/rightArrow.png") !important;
+          background-repeat: no-repeat !important;
+          background-position: center !important;
+          transition: background .2s !important;
+        }
+        &:hover{
+          span:nth-child(1){
+            background-image: url("../src/assets/imgs/home/rightArrowHover.png") !important;
+          }
+        }
+      }
+    }
+  }
+}
+
+// Fim Carousel styles
+
+/* Importing Bootstrap SCSS file. */
+@import "./node_modules/bootstrap/scss/bootstrap";
+
+/* Importing Datepicker SCSS file. */
+@import "node_modules/ngx-bootstrap/datepicker/bs-datepicker";
