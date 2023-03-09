@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="32.124" height="37.616" viewBox="0 0 32.124 37.616">
+    <defs>
+        <style>
+            .prefix__cls-1{fill:#ffffff}
+        </style>
+    </defs>
+    <g id="prefix__perto-cliente" transform="translate(-37.328)">
+        <path id="prefix__Caminho_398" d="M284.991 309.333a2.33 2.33 0 1 0 2.33 2.33 2.332 2.332 0 0 0-2.33-2.33z" class="prefix__cls-1" data-name="Caminho 398" transform="translate(-227.285 -286.577)"/>
+        <path id="prefix__Caminho_399" d="M391.658 309.333a2.33 2.33 0 1 0 2.33 2.33 2.332 2.332 0 0 0-2.33-2.33z" class="prefix__cls-1" data-name="Caminho 399" transform="translate(-326.105 -286.577)"/>
+        <path id="prefix__Caminho_400" d="M207.719 136.9l-1.569-4.7a1.545 1.545 0 0 0-1.466-1.056h-11.348l-.492-1.969a1.545 1.545 0 0 0-1.5-1.17h-3.139a1.545 1.545 0 0 0 0 3.09h1.933l2.062 8.246a1.545 1.545 0 0 0 1.5 1.17c.147 0-.694.1 12.748-1.581a1.545 1.545 0 0 0 1.271-2.03zm-12.854.355l-.758-3.03h9.463l.621 1.864z" class="prefix__cls-1" data-name="Caminho 400" transform="translate(-138.347 -118.584)"/>
+        <path id="prefix__Caminho_401" d="M57.706 29.034a1.545 1.545 0 0 0-1.545 1.545v1.961a1.988 1.988 0 0 1-1.986 1.986H42.4a1.988 1.988 0 0 1-1.986-1.986V5.076A1.988 1.988 0 0 1 42.4 3.09h11.77a1.988 1.988 0 0 1 1.986 1.986v4.316a1.545 1.545 0 0 0 3.09 0V5.076A5.082 5.082 0 0 0 54.174 0H42.4a5.082 5.082 0 0 0-5.076 5.076V32.54a5.082 5.082 0 0 0 5.076 5.076h11.77a5.082 5.082 0 0 0 5.08-5.076v-1.962a1.545 1.545 0 0 0-1.544-1.544z" class="prefix__cls-1" data-name="Caminho 401"/>
+        <circle id="prefix__Elipse_2" cx="1.569" cy="1.569" r="1.569" class="prefix__cls-1" data-name="Elipse 2" transform="translate(46.72 29.794)"/>
+    </g>
+</svg>
